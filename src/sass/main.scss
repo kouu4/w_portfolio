@@ -1,0 +1,71 @@
+@import 'about';
+@import 'accordion';
+@import 'alwaysVisible';
+@import 'bgParallax';
+@import 'card';
+@import 'container';
+@import 'contact';
+@import 'contactForm';
+@import 'elevator';
+@import 'footer';
+@import 'fv';
+@import 'gallery';
+@import 'header';
+@import 'headline';
+@import 'openbtn';
+@import 'overlay';
+@import 'pagetop';
+@import 'promiss';
+@import 'skills';
+@import 'slider';
+@import 'topic';
+@import 'works';
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Open Sans", "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "MS Pゴシック", sans-serif;
+    color: #0f1e27;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+
+    &:visited {
+        color: #0f1e27;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.-cl-white {
+    color: #fff
+}
+
+.-bg-white {
+    background-color: #f0f0f0;
+}
+
+.-line-group {
+    display: inline-block;
+
+}
+
+.-marker-green {
+    background: linear-gradient(transparent 50%, rgba(6, 188, 80, 0.7) 50%);
+}
+
+.-marker-orange {
+    background: linear-gradient(transparent 50%, rgba(255, 165, 0, 0.3) 50%);
+}

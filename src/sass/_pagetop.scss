@@ -1,0 +1,21 @@
+.pagetop {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #06BC50;
+    box-shadow: 2px 2px 5px 0 #555555;
+}
+
+.pagetop__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pagetop__icon {
+    width: 25px;
+    height: 25px;
+}

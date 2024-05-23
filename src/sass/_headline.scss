@@ -1,0 +1,162 @@
+.headline {
+    display: inline-block;
+}
+
+.headline__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.headline__ttl--orange,
+.headline__ttl--green,
+.headline__ttl--orangered,
+.headline__ttl--blue,
+.headline__ttl--deepblue,
+.headline__ttl--purple,
+.headline__ttl--black {
+    position: relative;
+    display: inline;
+    font-size: 2.625rem;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    z-index: auto;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+
+        height: 30px;
+
+        z-index: -1;
+    }
+}
+
+.headline__ttl--orange::before {
+    top: 20px;
+    width: 30vw;
+    background-color: orange;
+}
+
+.headline__ttl--green::before {
+    top: 20px;
+    right: -1vw;
+    width: 65vw;
+    background-color: rgb(7, 196, 7);
+}
+
+.headline__ttl--orangered::before {
+    // top: 20px;
+    // transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    background-color: orangered;
+}
+
+.headline__ttl--blue::before {
+    top: 20px;
+    width: 60vw;
+    background-color: rgb(114, 145, 255);
+}
+
+.headline__ttl--deepblue::before {
+    top: 20px;
+    width: 60vw;
+    background-color: rgb(19, 57, 197);
+}
+
+.headline__ttl--purple::before {
+    top: 20px;
+    width: 60vw;
+    background-color: rgb(164, 59, 221);
+}
+
+.headline__ttl--black::before {
+    top: 20px;
+    width: 60vw;
+    background-color: rgb(58, 58, 58);
+}
+
+
+
+
+
+.headline__underBox {
+    display: flex;
+    position: relative;
+}
+
+.headline__decoration,
+.headline__decoration--white {
+    content: "";
+    flex: 7;
+    margin-top: 10px;
+}
+
+.headline__decoration {
+    border-top: 1px dashed #0f1e27;
+}
+
+.headline__decoration--white {
+    border-top: 1px dashed #fff;
+}
+
+.headline__subttl {
+    flex: 3;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 500px),
+print {
+
+    .headline__ttl--orange,
+    .headline__ttl--green,
+    .headline__ttl--orangered,
+    .headline__ttl--blue,
+    .headline__ttl--deepblue,
+    .headline__ttl--purple {
+        font-size: 3rem;
+    }
+
+    .headline__subttl {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (min-width: 1000px),
+print {
+
+    .headline__ttl--orange,
+    .headline__ttl--green,
+    .headline__ttl--orangered,
+    .headline__ttl--blue,
+    .headline__ttl--deepblue,
+    .headline__ttl--purple {
+        font-size: 3.4rem;
+    }
+
+    .headline__subttl {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (min-width: 1440px),
+print {
+
+    .headline__ttl--orange,
+    .headline__ttl--green,
+    .headline__ttl--orangered,
+    .headline__ttl--blue,
+    .headline__ttl--deepblue,
+    .headline__ttl--purple {
+        font-size: 3.6rem;
+    }
+
+    .headline__subttl {
+        font-size: 1.25rem;
+    }
+}

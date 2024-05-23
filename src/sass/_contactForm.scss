@@ -1,0 +1,62 @@
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+}
+
+.contactForm__line {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.contactForm__singleLine {
+    height: 2.5rem;
+    padding-inline: 15px;
+    border: 1px solid #0f1e27;
+}
+
+.contactForm__multiLines {
+    height: 5rem;
+    padding: 15px;
+    border: 1px solid #0f1e27;
+}
+
+.conatctForm__btnWrapper {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactForm__btn {
+    width: 150px;
+    height: 60px;
+    display: inline;
+    padding: 16px 30px;
+    border: 1px solid #0f1e27;
+}
+
+@media screen and (min-width: 768px), print {
+
+    .contactForm {
+        padding: 45px 60px;
+    }
+
+    .contactForm__line {
+        flex-direction: row;
+    }
+
+    .contactForm__label {
+        width: 15%;
+    }
+
+    .contactForm__singleLine {
+        flex-grow: 1;
+    }
+
+    .contactForm__multiLines {
+        flex-grow: 1;
+    }
+
+}

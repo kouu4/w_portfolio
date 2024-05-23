@@ -1,0 +1,13 @@
+.gallery {
+    margin-top: 150px;
+}
+
+.gallery__card {
+    margin-top: 74px;
+}
+
+@media screen and (min-width: 768px), print {
+    .gallery {
+        margin-top: 300px;
+    }
+}

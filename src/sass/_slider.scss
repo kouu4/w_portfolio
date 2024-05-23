@@ -1,0 +1,13 @@
+@media screen and (min-width: 768px),
+print {
+    .slider-wrapper {
+        overflow: hidden;
+    }
+
+    .slider {
+        position: relative;
+        display: flex;
+        gap: 20px;
+    }
+
+}

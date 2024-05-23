@@ -1,0 +1,19 @@
+// bgParallax-parent //
+
+.bgParallax-parent {
+    position: relative;
+    // height: 6050px;
+    background-image:url('../../src/img/main_2.webp');
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 150px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-bottom: 150px;
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+    padding-top: 220px;
+    padding-bottom: 220px;
+    z-index: 0;
+    overflow: hidden;
+}

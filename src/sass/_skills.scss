@@ -1,0 +1,30 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.skills__cardFrame {
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+@media screen and (min-width: 768px), print {
+    .skills__cardFrame {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        gap: 50px;
+    }
+
+    .skills__card:nth-child(even) {
+        margin-top: 150px;
+        margin-bottom: -150px;
+    }
+}
+
+

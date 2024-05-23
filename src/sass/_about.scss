@@ -1,0 +1,66 @@
+.about {
+    margin-top: 150px;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: #f0f0f0;
+    margin-top: 30px;
+    padding: 30px 15px 40px;
+}
+
+.about__photoFrame {
+    flex-shrink: 0;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.about__portrait {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__body {
+    width: 100%;
+}
+
+.about__table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 12px;
+}
+
+.about__head {
+    width: 45px;
+    font-weight: normal;
+}
+
+.about__data {
+    padding-block: 10px;
+}
+
+@media screen and (min-width: 500px), print {
+    .about__table {
+        font-size: 16px;
+    }
+
+    .about__head {
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 768px), print {
+    .about__content {
+        flex-direction: row;
+        padding: 30px 60px 40px;
+
+    }
+
+
+}

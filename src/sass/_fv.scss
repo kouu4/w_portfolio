@@ -1,0 +1,76 @@
+.fv {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    height: 100vh;
+}
+
+.fv__inner,
+.fv__photoFrame {
+    width: 100%;
+    height: 100%;
+}
+
+.fv__inner {
+    position: relative;
+}
+
+.fv__ttl {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 1;
+    color: #fff;
+    font-size: 2.0rem;
+}
+
+.fv__photoFrame {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fv__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (min-width: 500px),
+print {
+
+    .fv__ttl {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 768px),
+print {
+
+    .fv__ttl {
+        font-size: 3.0rem;
+    }
+}
+
+@media screen and (min-width: 1000px),
+print {
+
+    .fv__ttl {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 1440px),
+print {
+
+    .fv__ttl {
+        font-size: 6.0rem;
+    }
+}

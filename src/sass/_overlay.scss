@@ -1,0 +1,71 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    z-index:9900;
+}
+
+.overlay__anchor {
+    position: relative;
+}
+
+.overlay__elem {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+// overlayMenu //
+
+.overlayMenu {
+    width: 100%;
+    height: 100vh;
+    max-width: 600px;
+    background-color: #555555;
+    padding: 80px 20px;
+}
+
+.overlayMenu__nav {
+    border-bottom: 1px solid #fff;
+}
+
+.overlayMenu__list {
+    padding-bottom: 48px;
+}
+
+.overlayMenu__item + .overlayMenu__item {
+    margin-top: 35px;
+}
+
+.overlayMenu__link {
+    color: #fff;
+    opacity: 1;
+
+    &:visited {
+        color: #fff;
+    }
+
+    &:hover {
+        opacity: 0.5;
+        transition: opacity 0.4s ease;
+    }
+}
+
+.overlayMenu__subTxt {
+    display: inline-block;
+}
+
+.overlayMenu__snsIcons {
+    padding-top: 40px;
+}
+
+@media screen and (min-width: 768px), print {
+    .overlayMenu {
+        height: 785px;
+        padding: 110px 80px 90px;
+    }
+}
