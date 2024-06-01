@@ -580,7 +580,7 @@ print {
   border: 1px solid #0f1e27;
 }
 
-.conatctForm__btnWrapper {
+.contactForm__btnWrapper {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
