@@ -2,33 +2,55 @@
 
 <div class="contactForm__line">
     <label class="contactForm__label">企業名 </label>
-    <input type="text" name="your-name" class="contactForm__singleLine" aria-required="true"
-        aria-invalid="false" />
+[text* text-996 class:contactForm__singleLine]
 </div>
 
 <div class="contactForm__line">
     <label class="contactForm__label">御担当名 </label>
-    <input type="text" name="your-name" class="contactForm__singleLine" aria-required="true"
-        aria-invalid="false" />
+[text* text-998 class:contactForm__singleLine]
 </div>
 
 <div class="contactForm__line">
     <label class="contactForm__label">メールアドレス</label>
-    <input type="email" name="your-email" class="contactForm__singleLine" aria-required="true"
-        aria-invalid="false" />
+[url* url-522 class:contactForm__singleLine placeholder]
 </div>
 
 <div class="contactForm__line">
-    <label class="contactForm__label">電話番号</label>
-    <input type="tel" name="your-email" class="contactForm__singleLine" aria-required="true"
-        aria-invalid="false" />
+    <label class="contactForm__label">電話番号(任意)</label>
+[tel tel-706 class:contactForm__singleLine placeholder "0312345678"]
 </div>
 
 <div class="contactForm__line">
     <label class="contactForm__label">お問合せ内容</label>
-    <textarea name="your-message" class="contactForm__multiLines" aria-invalid="false"></textarea>
+[textarea* textarea-822 class:contactForm__multiLines]
 </div>
 
 <div class="contactForm__btnWrapper">
-    <input type="submit" value="Send" class="contactForm__btn" />
+[submit class:contactForm__btn "送信"]
 </div>
+
+
+
+<!-- メールタブ：本文例
+
+ポートフォリオからの問い合わせがありました。
+
+テスト
+[_site_admin_email]
+
+
+企業名：
+[text-996]
+[_site_title] <wordpress@kt-portfolio.jp>
+
+ご担当名：
+[text-998]
+
+先方のアドレス：
+[url-522]
+
+電話番号（任意）：
+[tel-706]
+
+問い合わせ内容：
+[textarea-822] -->
